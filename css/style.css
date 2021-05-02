@@ -1,0 +1,171 @@
+body{
+  text-align: center;
+  font-family: Open Sans,sans-serif;
+  background-color: #947ece;
+  color:#f2f2f2;
+  margin: 0 0 30px 0;
+
+}
+h1{
+  font-size: 60px;
+  font-weight: 300;
+}
+
+h2{
+  color: #2A0074;
+  font-size: 40px;
+}
+
+h3{
+  font-size: 22px;
+  font-style:italic;
+}
+p{
+  font-size: 16px;
+  line-height: 1.5;
+}
+.titulo-verde{
+  color: #b3d9ff;
+}
+.titulo-vermelho{
+  color: #FF9E9E;
+}
+.titulo-amarelo{
+  color: #ffe36d;
+}
+section{
+  width: 60%;
+  margin: 0 auto;
+}
+section section{
+  width: 100%;
+}
+
+img{
+  width: 90%;
+}
+ul{
+  list-style-type: none;
+  line-height: 2;
+  padding-left: 0;
+  }
+a{
+  text-decoration: none;
+  color: #65e6e6;
+  width: 700;
+  font-weight: bold;
+  }
+
+a:visited{
+  color: #ff674d;
+}
+
+a:hover{
+  color: #404040;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+
+button{
+background: #41f341;
+border: 1px solid transparent;
+padding: 2px 20px;
+border-radius: 3px;
+}
+
+button:hover{
+  background: #0ed80e;
+  border: 1px solid #404040;
+}
+
+#pageUp{
+  position: fixed;
+  font-size: 20px;
+  right: 0;
+  bottom: 0;
+  margin: 10px 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: transparent;
+  color: #404040;
+  font-weight: lighter;
+}
+#pageUp:hover{
+  text-decoration: none;
+  font-style: normal;
+  border: 1px solid #404040;
+  font-weight: bold;
+}
+
+.principal {
+  width: 100%
+  height: 50px;
+  background: #ffcccc;
+  font-family: 'Arial';
+}
+
+ .principal ul {
+  list-style: none;
+  position: relative;
+ }
+
+ .principal ul li {
+  width: 150px;
+  display: inline-block;
+ }
+
+ .principal a {
+  background-color: #ffcccc;
+  padding: 9px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+ }
+ .principal a:hover {
+  background-color: #f4f4f4;
+  color: #555;
+ }
+
+
+ label[for="bt_menu"] {
+  padding: 5px;
+  background-color:  #ffcccc;
+  color: #fff;
+  font-family: 'Arial';
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: none;
+ }
+
+ #bt_menu {
+  display: none;
+ }
+
+ @media (max-width: 800px) {
+  label[for="bt_menu"] {
+   display: block;
+  }
+
+  #bt_menu:checked ~ .principal {
+   margin-left: 0;
+  }
+  #bt_menu:checked ~ .principal ul li {
+    display: block;
+  }
+  .principal {
+   margin-top: 5px;
+   margin-left: -100%;
+   transition: all .4s;
+  }
+
+  .principal ul li {
+   width: 100%;
+   float: none;
+   display: none;
+  }
+ }
